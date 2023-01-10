@@ -1,0 +1,593 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&family=Rubik+Mono+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: #47B5FF;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    background-color: #eaf6fa;
+    overflow-x: hidden;
+    transition: 0.3s all ease-in-out;
+}
+
+/* --------------------------- NAV --------------------- */
+nav{
+    position: fixed;
+    top: 0;
+    color: #eaf6fa;
+    display: flex;
+    padding: 0.625rem;
+    justify-content: space-between;
+    background-color: #47B5FF;
+    align-items: center;
+    width: 100%;
+}
+
+nav #nav-name a{
+    color: #06283D;
+    font-weight: 400;
+}
+
+nav #nav-toggler{
+    height: 100%;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    width: 30px;
+    padding: 1px;
+    cursor: pointer;
+}
+
+
+nav #nav-toggler span{
+    height: 2px;
+    width: 100%;
+    background-color: #eaf6fa;
+    margin: 2px 0;
+}
+
+nav #nav-list{
+    display: none;
+    transform: translateX(100%);
+    background-color: #47B5FF;
+    position: fixed;
+    flex-direction: column;
+    right: 0;
+    margin-right: 2vw;
+    margin-top: 50vh;
+    border-radius: 3px;
+    width: 30vw;
+    opacity: 0;
+    transition: 0.3s all ease-in-out;
+}
+
+nav #nav-list.active{
+    transform: translateX(0);
+    display: flex;
+    opacity: 100%;
+}
+
+nav #nav-list a{
+    color: #eaf6fa;
+    padding: 0.625rem;
+    border-bottom: 1px solid #eaf6fa;
+}
+
+nav #nav-list a:hover{
+    background-color: #06283D;
+}
+
+
+/* ------------------------- HOME ---------------------*/
+#home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 100vh;
+    margin: auto;
+    text-align: center;
+}
+
+#home img{
+    width: 230px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.267);
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+}
+
+#home img:hover{
+    animation: homeimganim 2s infinite;
+}
+
+#home h1{
+    color: #06283D;
+    margin-top: 5vh;
+    text-transform: uppercase;
+}
+
+#home p{
+    font-size: smaller;
+    width: 70%;
+    margin-top: 2vh;
+}
+
+@keyframes homeimganim {
+    0%{
+        transform: scale(100%);
+        filter: brightness(100%);
+    }
+    50%{
+        transform: scale(105%);
+        border-radius: 0;
+        filter: brightness(105%);
+    }
+    100%{
+        transform: scale(100%);
+        filter: brightness(100%);
+    }
+}
+
+/* ------------------------- ABOUT ---------------------*/
+#about{
+    border-top: 2px dashed #47B5FF;
+    border-bottom: 2px dashed #47B5FF;
+    padding: 1rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#about h1{
+    color: #06283D;
+}
+
+
+#about p {
+    width: 80%;
+    font-size: smaller;
+    margin-top: 2vh;
+}
+
+#about .about-white{
+    color: #06283D;
+}
+
+/* ---------------------- PENDIDIKAN -------------------*/
+
+#riwayat-pendidikan{
+    padding: 10px;
+    margin-top: 5vh;
+}
+
+#riwayat-pendidikan h1{
+    color: #06283D;
+}
+
+#riwayat-pendidikan #list-pendidikan-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#riwayat-pendidikan .list-pendidikan{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#riwayat-pendidikan .list-pendidikan h4{
+    color: #06283D;
+}
+
+#riwayat-pendidikan .list-pendidikan p{
+    width: 75%;
+    font-size: smaller;
+}
+
+.list-pendidikan-route{
+    width: 3px;
+    border-radius: 10px;
+    margin: 3vh 0;
+    background-color:#06283D;
+    height: 10vh;
+    animation: pendidikanrouteanim 1s infinite;
+    transform-origin: top;
+}
+
+@keyframes pendidikanrouteanim {
+    0%{
+        transform: scaleY(0);
+    }
+    100%{
+        transform: scaleY(100%);
+    }
+}
+
+#riwayat-pendidikan h5{
+    text-align: center;
+    background-color: #47B5FF;
+    padding: 10px;
+    color: #06283D;
+    border-radius: 10px;
+    width: 80%;
+    margin: 10vh auto 0 auto;
+    cursor: pointer;
+    transition: 0.4s all ease-in-out;
+}
+
+#riwayat-pendidikan h5:hover{
+    transform: rotateX(20deg) scale(105%);
+    box-shadow: 0 20px 10px rgba(0, 0, 0, 0.267);
+}
+
+/* ---------------------- SKILLS -------------------*/
+#skills{
+    margin-top: 15vh;
+    padding: 10px;
+}
+
+#skills h1{
+    text-align: right;
+    color: #06283D;
+    border-bottom: 2px dashed #06283D;
+}
+
+#skills-container{
+    margin-top: 5vh;
+}
+
+#program-skills, #another-skills{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 8vh;
+}
+
+#skills .skills{
+    background-color: #47B5FF;
+    cursor: pointer;
+    padding: 5px 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    width: 120px;
+    margin: 1vh 1vw;
+    transition: 0.3s all ease-in-out;
+}
+
+#skills .skills h5{
+    color: #06283D;
+}
+
+#skills .skills p{
+    color: #eaf6fa;
+    font-size: smaller;
+}
+
+#skills .skills:hover{
+    transform: scale(103%);
+}
+
+
+/* ---------------------- PROFILE -------------------*/
+#profile{
+    width: 90%;
+    margin: 15vh auto 0 auto;
+    padding: 20px;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #47B5FF;
+    color: #eaf6fa;
+    border: 2px dashed #eaf6fa;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.267);
+}
+
+#profile h1{
+    color: #eaf6fa;
+    text-align: center;
+    margin-bottom: 4vh;
+}
+
+#profile li{
+    margin: 1.5vh 2vw;
+    padding: 1vh 2vw;
+    border-bottom: 1px solid #eaf6fa;
+    width: fit-content;
+}
+
+#profile h4{
+    color: #06283D;
+}
+
+#profile p{
+    color: #eaf6fa;
+}
+
+
+/* ---------------------- CONTACT -------------------*/
+#contact{
+    margin: 20vh auto 0 auto;
+    width: 90%;
+}
+
+#contact form{
+    margin-top: 5vh;
+}
+
+#contact .forms{
+    display: flex;
+    flex-direction: column;
+    margin: 3vh 0 ;
+}
+
+#contact .forms input{
+    width: 50%;
+    border-radius: 5px;
+    border: 1px solid #47B5FF;
+}
+
+#contact .forms textarea{
+    border-radius: 5px;
+    border: 1px solid #47B5FF;
+    resize: none;
+
+}
+
+#contact input, #contact textarea{
+    background-color: transparent;
+    padding: 0.625rem;
+    border: none;
+    color: #06283D;
+}
+
+#contact input:focus, #contact textarea:focus{
+    outline: none;
+}
+
+#contact .forms label{
+    color: #06283D;
+    margin-bottom: 1vh;
+}
+
+#contact form button{
+    background-color: #47B5FF;
+    padding: 2px 10px;
+    border: none;
+    font-size: larger;
+    color: #eaf6fa;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+}
+
+#contact form button:hover{
+    background-color: transparent;
+    color: #47B5FF;
+    border: 1px solid #47B5FF;
+}
+
+/* ---------------------- FOOTER -------------------*/
+footer{
+    margin-top: 25vh;
+    background-color: #47B5FF;
+    padding: 0.7rem;
+}
+
+footer a{
+    font-size: smaller;
+    color: #06283D;
+    width: fit-content;
+}
+
+footer #main-footer{
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .main-footer-components{
+    display: flex;
+    flex-direction: column;
+}
+
+
+footer .main-footer-components h6{
+    color: #eaf6fa;
+    font-size: medium;
+}
+
+footer .main-footer-components a{
+    margin: 0.5vh 0;
+}
+
+.theme-mode-toggler{
+    padding: 10px;
+    font-size: small;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+}
+.theme-mode-toggler.dark{
+    background-color: #06283D;
+}
+
+.theme-mode-toggler.light{
+    background-color: #eaf6fa;
+}
+
+footer #copyrights{
+    margin-top: 6vh;
+    text-align: center;
+}
+
+footer #copyrights p{
+    color: #06283D;
+    font-size: smaller;
+}
+
+
+/* ------------------ RESPONSIVE SECTIONS ------------*/
+@media (min-width: 768px) {
+    #home h1{
+        font-size: 40px;
+    }
+    #home p{
+        font-size: medium;
+    }
+
+    #about h1{
+        font-size: 35px;
+    }
+    #about p{
+        font-size: 15px;
+    }
+
+    #skills h1{
+        font-size: 35px;
+    }
+
+    #skills .skills{
+        width: 150px;
+    }
+
+    #contact h1{
+        font-size: 40px;
+    }
+
+    #contact .forms textarea{
+        width: 80%;
+    }
+
+    #contact form button{
+        font-size: 22px;
+    }
+
+}
+@media (min-width: 1024px) {
+    nav #nav-toggler{
+        display: none;
+    }
+    nav #nav-list{
+        flex-direction: row;
+        margin-top: 0;
+        position: static;
+        display: flex;
+        width: 40%;
+        opacity: 100;
+        transform: translateX(0);
+        justify-content: space-around;
+    }
+    nav #nav-list a{
+        border: none;
+        color: #06283D;
+    }
+    nav #nav-list a:hover{
+        font-weight: 600;
+        background-color: transparent;
+    }
+
+    #home img{
+        width: 350px;
+    }
+
+    #about h1{
+        font-size: 50px;
+    }
+
+    #riwayat-pendidikan .list-pendidikan h4{
+        font-size: 20px;
+    }
+
+    #riwayat-pendidikan h5{
+        width: 60%;
+        font-size: 20px;
+    }
+
+    #skills{
+        padding: 30px;
+    }
+
+    #skills .skills{
+        width: 20%;
+        padding: 7px 5px;
+    }
+
+    #skills h1{
+        font-size: 50px;
+    }
+
+    #skills .skills h5{
+        font-size: 20px;
+    }
+
+    #skills .skills p{
+        font-size: 15px;
+    }
+
+    #profile{
+        width: 70%;
+    }
+
+    #contact .forms textarea{
+        width: 60%;
+    }
+
+    #skills, #profile, #contact{
+        margin-top: 30vh;
+    }
+
+}
+
+/* ----------------------- DARK SECTION ------------ */
+html.dark body{
+    background-color: #06283D;
+}
+
+html.dark #home h1, html.dark #about h1, 
+html.dark #riwayat-pendidikan h1,
+html.dark #riwayat-pendidikan .list-pendidikan h4, html.dark #about .about-white{
+    color: #eaf6fa;
+}
+
+html.dark #skills h1{
+    color: #eaf6fa;
+    border-color: #eaf6fa;
+}
+
+html.dark .list-pendidikan-route{
+    background-color: #47B5FF;
+}
+
+html.dark #profile{
+    background-color: transparent;
+}
+
+html.dark #profile h4 {
+    color: #47B5FF;
+}
+
+html.dark #contact .forms label, html.dark #contact .forms input, html.dark #contact .forms textarea{
+    color: #eaf6fa;
+}

@@ -1,0 +1,215 @@
+.font-bodoni{
+    font-family: 'Bodoni Moda', serif;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(83, 6, 22);
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+nav {
+    background-color: rgb(83, 6, 22);
+}
+
+.navbar-brand{
+    color: gold;
+}
+
+
+#home{
+    margin-top: 7vh !important;
+}
+
+.carousel-item{
+    height: 400px;
+}
+
+.carousel-item img{
+    height: 400px;
+    object-fit: cover;
+}
+
+#about{
+    margin: 40vh auto 40vh auto;
+}
+
+#introducing{
+    margin-top: 10vh;
+}
+
+#essence-image, #awareness-image{
+    height: 50vh;
+}
+
+#essence-image img, #awareness-image img{
+    height: 50vh;
+    object-fit: contain;
+}
+
+#introducing p{
+    font-size: smaller;
+}
+
+#introducing #awareness{
+    margin-top: 15vh !important;
+}
+
+#facilities{
+    padding: 20px;
+    margin-top: 30vh !important;
+}
+
+#facilities img{
+    width: 80%;
+    object-fit: cover;
+    aspect-ratio: 4/3;
+    padding: 10px;
+    border: 1px solid gold;
+    margin: 2vh 0;
+}
+
+#book-now{
+    width: 90%;
+    margin-top: 30vh !important;
+}
+
+#book-now img{
+    height: 50vh;
+    object-fit: contain;
+}
+
+#book-now button{
+    color: rgb(83, 6, 22);
+    transition: 0.3s all ease-in-out;
+}
+
+#book-now button:hover{
+    background-color:rgb(83, 6, 22) !important;
+    color: gold;
+    transform: scale(103%);
+    border: 1px solid gold !important;
+}
+
+#news{
+    margin-top: 30vh !important;
+}
+
+.card{
+    background-color: rgb(83, 6, 22);
+    cursor: pointer;
+    height: 400px;
+    transition: 0.3s all ease-in-out;
+    position: relative;
+}
+
+.card:hover{
+    transform: scale(102%);
+
+}
+
+.card-img-top{
+    height: 35%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-text{
+    font-size: small;
+}
+
+.see-detail-btn{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 4vh;
+    color: rgb(83, 6, 22);
+}
+
+#location{
+    margin-top: 30vh;
+}
+
+
+
+#location p{
+    text-align: center;
+    margin-top: 5vh;
+}
+
+footer{
+    margin-top: 30vh;
+    border-top: 1px solid #ffd700;
+    box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.082);
+}
+
+footer .list-group-item{
+    background-color: transparent;
+}
+
+footer p{
+    font-size: small;
+}
+
+footer h6{
+    color: white;
+}
+
+footer .list-group-item{
+    border-color: #dc3545;
+}
+
+footer .list-group h6{
+    color:  #dc3545;
+}
+footer p {
+    color: gold;
+}
+
+#media-social a{
+    margin: 1vh 0;
+}
+
+#informations a{
+    text-decoration: none;
+    color: gold;
+}
+
+#informations a:hover{
+    color: white;
+}
+
+#footer-bawah{
+    background-color: rgb(83, 6, 22);
+}
+
+@media (min-width: 768px) {
+   #home{
+    margin-top: 20vh !important;
+   }
+   #home-title h1{
+    font-size: 45px !important;
+   }
+
+   #book-now div{
+    width: 50%;
+   }
+
+   #facilities img {
+    width: 40%;
+    margin: 4vh;
+}
+
+}
+
+@media (min-width: 1200px) {
+    #home-title h1{
+     font-size: 60px !important;
+    }
+    #about h1{
+        font-size: 50px !important;
+    }
+    #about h5{
+        font-size: 30px !important;
+    }
+}

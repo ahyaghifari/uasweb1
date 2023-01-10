@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile | Ahya Ghifari</title>
+    <link rel="stylesheet" href="./assets/css/profil.css">
+</head>
+<body>
+
+    <!-- NAV -->
+    <header>
+        <nav>
+            <div id="nav-name">
+                <a href="#">AHYA GHIFARI</a>
+            </div>
+            <div id="nav-toggler">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div id="nav-list">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#profile">Profile</a>
+                <a href="index.html">Halaman Utama</a>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- HOME -->
+    <div id="home">
+        <img src="./assets/images/profil.jpg" alt="">
+        <h1>Ahya Ghifari</h1>
+        <p>A college from Universitas Kalimantan Muhammad Arsyad Al-Banjari.</p>
+    </div>
+
+    <!-- ABOUT -->
+    <div id="about">
+        <h1>ABOUT</h1>
+        <p>Halaman profil ini dibuat untuk memenuhi UAS WEB 1 FTI UNISKA, dibuat dengan menggunakan  <span class="about-white">HTML5, CSS3, sedikit JQuery.</span> Dan di desain untuk responsive. Font yang digunakan <span class="about-white">Poppins</span> Halaman ini dan tugas sebelumnya juga diupload ke <a class="about-white" style="text-decoration: underline;">Github</a> saya dengan gambar berbeda untuk privasi.</p>
+    </div>
+
+    <!-- RIWAYAT PENDIDIKAN -->
+    <div id="riwayat-pendidikan">
+        <h1>Riwayat Pendidikan</h1>
+        <div id="list-pendidikan-container">
+            <div class="list-pendidikan">
+                <h4>MIN Sungai Sipai</h4>
+                <p>Jl. Perjuangan No.09 Desa Sungai Sipai</p>
+            </div>
+            <div class="list-pendidikan-route"></div>
+            <div class="list-pendidikan">
+                <h4>SMP Negeri 1 Banjarbaru</h4>
+                <p>Jl. Pangeran Suriansyah No.4, Kemuning, Kec. Banjarbaru Selatan</p>
+            </div>
+            <div class="list-pendidikan-route"></div>
+            <div class="list-pendidikan">
+                <h4>SMK Negeri 1 Banjarbaru</h4>
+                <p>Jl. Ahmad Yani KM. 32, 5, Loktabat Selatan</p>
+            </div>
+        </div>
+        <h5>Dan sekarang sedang belajar di Universitas Islam Kalimantan Muhammad Arsyad Al-Banjari Fakultas Teknologi Informasi Prodi Teknik Informatika</h5>
+    </div>
+
+    <!-- SKILLS -->
+    <div id="skills">
+        <h1>Skills</h1>
+        <div id="skills-container">
+            <div id="program-skills">
+                <div class="skills">
+                    <h5>HTML</h5>
+                    <p>intermediate</p>
+                </div>
+                <div class="skills">
+                    <h5>CSS</h5>
+                    <p>Intermediate</p>
+                </div>
+                <div class="skills">
+                    <h5>PHP</h5>
+                    <p>Beginner</p>
+                </div>
+                <div class="skills">
+                    <h5>Django</h5>
+                    <p>Beginner</p>
+                </div>
+                <div class="skills">
+                    <h5>Javascript</h5>
+                    <p>Beginner</p>
+                </div>
+                <div class="skills">
+                    <h5>SASS</h5>
+                    <p>Beginner</p>
+                </div>
+                <div class="skills">
+                    <h5>Tailwind</h5>
+                    <p>Beginner</p>
+                </div>
+                <div class="skills">
+                    <h5>C++</h5>
+                    <p>Beginner</p>
+                </div>
+            </div>
+            <div id="another-skills">
+                <div class="skills">
+                    <h5>Photography</h5>
+                    <p>Intermediate</p>
+                </div>
+                <div class="skills">
+                    <h5>Photoshop</h5>
+                    <p>Intermediate</p>
+                </div>
+                <div class="skills">
+                    <h5>Video Editing</h5>
+                    <p>Beginner</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PROFILE -->
+    <div id="profile">
+        <h1>Profile</h1>
+        <ul>
+            <li>
+                <h4>Nama Lengkap :</h4>
+                <p>Muhammad Ahya Ghifari</p>
+            </li>
+            <li>
+                <h4>Tempat, Tanggal Lahir :</h4>
+                <p>Martapura, 28 Agustus 2003</p>
+            </li>
+            <li>
+                <h4>Alamat</h4>
+                <p>Jl. Karang Anyar 3</p>
+            </li>
+            <li>
+                <h4>Hobi</h4>
+                <p>Web and Photoshop Editing</p>
+            </li>
+        </ul>
+        
+    </div>
+
+    <!-- CONTACT -->
+    <div id="contact">
+        <h1>Contact</h1>
+        <form>
+            <div class="forms">
+                <label for="nama">Nama :</label>
+                <input type="text" id="nama" placeholder=
+                "Nama..." required>
+            </div>
+            <div class="forms">
+                <label for="email">Email :</label>
+                <input type="email" id="email" placeholder="Email..." required>
+            </div>
+            <div class="forms form-pesan">
+                <label for="pesan">Pesan :</label>
+                <textarea name="pesan" id="pesan" cols="30" rows="8" placeholder="Pesan..."></textarea>
+            </div>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div id="main-footer">
+            <div id="media-sosial" class="main-footer-components">    
+                <h6>Media Sosial</h6>
+                <a href="http://instagram.com" target="_blank">Instagram</a>
+                <a href="http://facebook.com" target="_blank">Facebook</a>
+                <a href="http://twitter.com" target="_blank">Twitter</a>
+                <a href="http://youtube.com" target="_blank">Youtube</a>
+                <a href="http://tiktok.com" target="_blank">Tiktok</a>
+            </div>
+            <div id="footer-nav" class="main-footer-components">
+                <h6>Navigations</h6>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#riwayat-pendidikan">Pendidikan</a>
+                <a href="#skills">Skills</a>
+                <a href="#profile">Profile</a>
+                <a href="#profile">Contact</a>
+            </div>
+            <div id="theme-mode" class="main-footer-components">
+                <h6>Theme</h6>
+                <p class="theme-mode-toggler dark">Dark Mode</p>
+            </div>
+        </div>
+        <div id="copyrights">
+            <p>&copy; Ahya Ghifari-2023 | All Right Reserved</p>
+        </div>
+    </footer>
+
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <!-- SCRIPT -->
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
